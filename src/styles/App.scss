@@ -1,0 +1,14 @@
+@import './reset';
+@import './mixins';
+@import './header';
+.App {
+  width: 100vw;
+  height: 100vh;
+  @include flexCenter;
+}
+
+.container {
+  width: 40%;
+  height: 90vh;
+  border: 1px solid black;
+}

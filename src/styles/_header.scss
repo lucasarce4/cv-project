@@ -1,0 +1,23 @@
+@import './mixins';
+
+.header {
+  height: 20%;
+  background-color: gray;
+  display: flex;
+}
+
+.textContainer {
+  width: 70%;
+}
+
+.imgContainer {
+  width: 30%;
+  height: 100%;
+  background-color: aqua;
+}
+
+.nameContainer {
+  width: 100%;
+  min-height: 60%;
+  @include flexCenter;
+}
