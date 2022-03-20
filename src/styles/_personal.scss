@@ -1,0 +1,139 @@
+.personalInfoContainer {
+  height: 100%;
+  width: 30%;
+  background-color: #57fff4;
+  position: relative;
+}
+
+.personalInfo {
+  padding-top: 30px;
+  padding-left: 5px;
+  position: relative;
+  div {
+    margin: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+  }
+  .linkedin {
+    border: none;
+  }
+  h3 {
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+
+  li {
+    position: relative;
+  }
+}
+
+.skills {
+  border-bottom: none;
+  position: relative;
+  margin: 40px 10px;
+
+  h2 {
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+  li {
+    position: relative;
+    padding: 10px;
+    display: flex;
+
+    button {
+      position: absolute;
+      left: 90%;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 5px;
+    }
+  }
+  button {
+    display: none;
+  }
+
+  .skillsDeleteButton.show {
+    display: flex;
+  }
+
+  .skillsButton.show {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 72%;
+  }
+}
+
+.asideButton,
+.asideEditor {
+  display: none;
+}
+
+.asideButton.show {
+  display: flex;
+  position: absolute;
+  left: 70%;
+  top: 5%;
+  z-index: 1;
+}
+
+.asideEditor.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 100%;
+  top: 2%;
+  border-bottom: none;
+  z-index: 1;
+}
+
+.skillsEditor {
+  display: none;
+}
+
+.skillsEditor.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 112%;
+  top: 0;
+  z-index: 1;
+
+  button {
+    display: flex;
+  }
+}
+
+.skillsEditor,
+.asideEditor,
+.profileForm,
+.editor,
+.eduForm,
+.experienceForm {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #57fff4;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.68);
+
+  input {
+    margin: 4px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+  }
+  button {
+    background-color: white;
+    margin: 6px;
+  }
+}
+
+.skillFormButtons {
+  display: flex;
+  gap: 10px;
+}

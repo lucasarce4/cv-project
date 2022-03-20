@@ -2,22 +2,95 @@
 
 .header {
   height: 20%;
-  background-color: gray;
   display: flex;
+  position: relative;
 }
 
 .textContainer {
   width: 70%;
+  position: relative;
 }
 
 .imgContainer {
   width: 30%;
   height: 100%;
-  background-color: aqua;
+  position: relative;
+  background-color: #57fff4;
+
+  img {
+    max-height: 100%;
+    padding-left: 20px;
+    border-radius: 50%;
+  }
 }
 
 .nameContainer {
   width: 100%;
   min-height: 60%;
+  font-size: 3rem;
   @include flexCenter;
+}
+
+.jobTitleContainer {
+  width: 100%;
+  font-size: 2rem;
+  @include flexCenter;
+}
+
+.button,
+.editor {
+  display: none;
+}
+
+.button.show {
+  display: flex;
+  position: absolute;
+  left: 88%;
+  top: 5%;
+}
+
+.editor.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 103%;
+  top: 5%;
+}
+
+.inputFileContainer {
+  display: none;
+}
+
+.inputFileContainer.show {
+  display: flex;
+  padding-left: 20px;
+  width: fit-content;
+  height: fit-content;
+  background-color: aqua;
+}
+
+.inputFileLabel,
+.inputFile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  @include flexCenter;
+  margin-left: -10px;
+
+  input {
+    opacity: 0;
+  }
+}
+
+.textContainer:after {
+  content: '';
+  display: block;
+  width: 95%;
+  border: 2px solid #57fff4;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 5px;
 }
