@@ -127,8 +127,9 @@ input {
   background-color: #57fff4;
 }
 .imgContainer img {
-  max-height: 100%;
-  padding-left: 20px;
+  display: block;
+  margin: 5px auto;
+  max-height: 95%;
   border-radius: 50%;
 }
 
