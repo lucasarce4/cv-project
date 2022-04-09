@@ -1,6 +1,6 @@
 # Resume generator for TheOdinProject  
 
-First project using React + Sass
+First React and Sass project.
 
 #### [Live preview](https://lucasarce4.github.io/cv-project/)
 
